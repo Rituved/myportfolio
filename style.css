@@ -590,15 +590,16 @@ textarea {
     font-size: 35px;
     font-weight: 700;
 }
+
 .hello{
     font-size: 35px;
     font-weight: 700;
 }
 .projectOne {
    margin: 0 auto;
-   background-color: #9600db;
+   background-color: #58db00;
    margin-top: 20px;
-    padding: 20px 10px;
+    padding: 10px 5px;
 }
 
 textarea {
