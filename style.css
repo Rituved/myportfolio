@@ -153,7 +153,9 @@ nav ul {
     margin-left: 50px;
     padding-bottom: 50px;
 }
-
+.hiddenp{
+    visibility: hidden;
+}
 .nameF {
     font-size: 40px;
     font-weight: 600;
@@ -173,9 +175,6 @@ nav ul {
 .aboutRight .paragrap {
     line-height: 25px;
     font-size: 16px;
-}
-.aboutRight{
-    width: 80%;
 }
 .homeRight {
     object-fit: cover;
@@ -549,6 +548,9 @@ textarea {
     .form input {
         width: 90%;  
     }
+    .form{
+        padding-left: 10%;
+    }
     .sentMessage {
        margin-top: 30px;
        margin-left: 30%;
@@ -572,9 +574,6 @@ textarea {
     flex-direction: column;
     /* background-color: #00a1db; */
 }
-.homeLeft{
-padding-left: 50px;
-}
 .Github {
     padding: 10px 10px;
 }
@@ -585,8 +584,19 @@ padding-left: 50px;
    font-size: 18px;
    font-weight: 800;
 }
+.occupation {
+    font-size: 35px;
+    font-weight: 700;
+}
+.hello{
+    font-size: 35px;
+    font-weight: 700;
+}
 .projectOne {
    margin: 0 auto;
+   margin-left: 10px;
+   margin-right: 10px;
+   background-color: #00a1db;
    margin-top: 20px;
     /* padding: 20px 10px; */
 }
@@ -594,6 +604,9 @@ padding-left: 50px;
 textarea {
     width: 90%;
 }
-}
 
+.hiddenp{
+    visibility: visible;
+}
+}
 
