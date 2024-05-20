@@ -2,21 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    /* cursor: none; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     background-color: #cad5d540;
 }
-
+.nav-hid{
+    visibility: hidden;
+}
 .cursor {
     position: absolute;
-    pointer-events: none; /* Prevent the cursor divs from intercepting mouse events */
+    pointer-events: none; 
     transition: transform 0.1s ease;
 }
 
@@ -41,8 +43,6 @@ body{
 }
 /* navigation section start  */
 .wrapperNavigation {
-    width: 100%;
-    height: 100vh;
     background-color: var(--background-color);
 
 }
@@ -85,18 +85,10 @@ nav ul {
 /* navigation section end  */
 /* home section start */
 .home {
-    position: absolute;
-    top: 200px;
-    left: 100px;
     line-height: 4rem;
-    display: flex;
-    justify-content: space-around;
 }
 .socialMedia img {
-  display: flex;
     margin: 2px;
-    position: relative;
-    left: -100px;
 }
 .socia_m img{
     width: 50px;
@@ -147,6 +139,10 @@ nav ul {
 } 
 .main-page{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  
 }
 /* home section end */
 /* about start */
@@ -184,10 +180,10 @@ nav ul {
 .homeRight {
     object-fit: cover;
     background-repeat: no-repeat;
-    position: relative;
+    /* position: relative;
     left: 60px;
-    bottom: 100px;
-  width: 500px;
+    bottom: 100px; */
+  /* width: 00px; */
   background-image: url(https://mohit-portfolio.vercel.app/assets/blob.da2ded7b.svg);
 }
 .homeRight img{
@@ -528,23 +524,14 @@ textarea {
 
 /* media quary start */
 /*  Small devices (landscape phones, 576px and up) */
-@media (max-width: 450px) { 
+@media only screen and (max-width: 466px) { 
     nav a{
-        visibility: hidden;
-    }
-    nav{
-        display: block;
-    }
-    .dark_white{
-        background-color: khaki;
-        position: relative;
-        top: -62px;
-        left: 350px;
+     visibility: hidden;
     }
     .project {
         display: flex;
         justify-content: center;
-      margin-left: 15px;
+      /* margin-left: 15px; */
     }
  
     .skills_list{
@@ -552,7 +539,7 @@ textarea {
     width: 100%;
     }
     .contactLeft img {
-        /* visibility: hidden; */
+        /* visibility: hidden;  */
        width: 100%;
     }
     .contactStarted {
@@ -560,79 +547,53 @@ textarea {
       flex-direction: column;
     }
     .form input {
-        padding: 10px 15px;
-        width: 95%;  
+        width: 90%;  
     }
     .sentMessage {
        margin-top: 30px;
        margin-left: 30%;
     }
+    .contactRight{
+        margin: 0 auto;
+    }
     .about {
-        display: flex;
-        flex-direction: column;  
+       display: flex;
+       flex-direction: column;
     }
     .nameF {
         font-size: 25px;
         font-weight: 600;
  }
+ .aboutleft img{
+    width: 400px;
+ }
  .main-page{
     display: flex;
     flex-direction: column;
+    /* background-color: #00a1db; */
 }
-.socialMedia{
-    visibility: hidden;
-}
-.box{
-    visibility: hidden;
-}
-.home {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    padding-left: 10px;
-    line-height: 4rem;
+.homeLeft{
+padding-left: 50px;
 }
 .Github {
     padding: 10px 10px;
 }
 .linkedin{
     padding: 10px 10px;
-    margin-left: 10px;
-}
-.homeLeft{
-    width: 90%;
-    background-color: #00a1db;
-}
-.homeRight {
-    object-fit: cover;
-    background-repeat: no-repeat;
-    width: 400px;
-  background-image: url(https://mohit-portfolio.vercel.app/assets/blob.da2ded7b.svg);
 }
 .logo{
    font-size: 18px;
    font-weight: 800;
 }
-.aboutleft img{
-    width: 98%;
-}
 .projectOne {
    margin: 0 auto;
    margin-top: 20px;
-    background-color: #db143c;
     /* padding: 20px 10px; */
 }
 
 textarea {
-    width: 360px;
+    width: 90%;
 }
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-  
- }
 
 
