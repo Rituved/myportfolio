@@ -532,7 +532,9 @@ textarea {
         justify-content: center;
       /* margin-left: 15px; */
     }
- 
+    .fillForm {
+       text-align: center;
+    }
     .skills_list{
      margin-left: 10px;
     width: 100%;
@@ -594,11 +596,9 @@ textarea {
 }
 .projectOne {
    margin: 0 auto;
-   margin-left: 10px;
-   margin-right: 10px;
-   background-color: #00a1db;
+   background-color: #9600db;
    margin-top: 20px;
-    /* padding: 20px 10px; */
+    padding: 20px 10px;
 }
 
 textarea {
