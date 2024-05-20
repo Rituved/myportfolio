@@ -436,8 +436,6 @@ i {
 }
 
 textarea {
-    /* padding-left: 100px;
-    padding-right: 150px; */
     width: 400px;
     border-radius: 6px;
     border: none;
@@ -594,6 +592,13 @@ textarea {
     padding-left: 10px;
     line-height: 4rem;
 }
+.Github {
+    padding: 10px 10px;
+}
+.linkedin{
+    padding: 10px 10px;
+    margin-left: 10px;
+}
 .homeLeft{
     width: 90%;
     background-color: #00a1db;
@@ -610,6 +615,16 @@ textarea {
 }
 .aboutleft img{
     width: 98%;
+}
+.projectOne {
+   margin: 0 auto;
+   margin-top: 20px;
+    background-color: #db143c;
+    /* padding: 20px 10px; */
+}
+
+textarea {
+    width: 360px;
 }
 }
 /* Medium devices (tablets, 768px and up) */
