@@ -527,12 +527,27 @@ textarea {
 
 /* media quary start */
 /*  Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (max-width: 450px) { 
     nav a{
         visibility: hidden;
     }
     .dark_white{
-        margin-left: 350px;
+        margin-left: -175px;
+    }
+    .project {
+        display: flex;
+        justify-content: center;
+    }
+    .skills_list{
+     margin-left: 10px;
+    width: 100%;
+    background-color: rgba(58, 201, 201, 0.952);
+    }
+    .contactLeft img {
+        visibility: hidden;
+    }
+    .contactStarted {
+        display: block;
     }
  }
 
