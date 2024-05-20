@@ -88,10 +88,8 @@ nav ul {
     position: absolute;
     top: 200px;
     left: 100px;
-    /* color: rgb(0, 0, 0); */
     line-height: 4rem;
     display: flex;
-
     justify-content: space-around;
 }
 .socialMedia img {
@@ -147,13 +145,16 @@ nav ul {
     color: #db143c;
     font-weight: 600;
 } 
+.main-page{
+    display: flex;
+}
 /* home section end */
 /* about start */
 .about {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     padding-top: 50px;
+    margin-left: 50px;
     padding-bottom: 50px;
 }
 
@@ -176,7 +177,9 @@ nav ul {
 .aboutRight .paragrap {
     line-height: 25px;
     font-size: 16px;
-
+}
+.aboutRight{
+    width: 80%;
 }
 .homeRight {
     object-fit: cover;
@@ -531,28 +534,83 @@ textarea {
     nav a{
         visibility: hidden;
     }
+    nav{
+        display: block;
+    }
     .dark_white{
-        margin-left: -175px;
+        background-color: khaki;
+        position: relative;
+        top: -62px;
+        left: 350px;
     }
     .project {
         display: flex;
         justify-content: center;
+      margin-left: 15px;
     }
+ 
     .skills_list{
      margin-left: 10px;
     width: 100%;
-    background-color: rgba(58, 201, 201, 0.952);
     }
     .contactLeft img {
-        visibility: hidden;
+        /* visibility: hidden; */
+       width: 100%;
     }
     .contactStarted {
-        display: block;
+      display: flex;
+      flex-direction: column;
     }
+    .form input {
+        padding: 10px 15px;
+        width: 95%;  
+    }
+    .sentMessage {
+       margin-top: 30px;
+       margin-left: 30%;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;  
+    }
+    .nameF {
+        font-size: 25px;
+        font-weight: 600;
  }
-
+ .main-page{
+    display: flex;
+    flex-direction: column;
+}
+.socialMedia{
+    visibility: hidden;
+}
+.box{
+    visibility: hidden;
+}
+.home {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    padding-left: 10px;
+    line-height: 4rem;
+}
+.homeLeft{
+    width: 90%;
+    background-color: #00a1db;
+}
+.homeRight {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+  background-image: url(https://mohit-portfolio.vercel.app/assets/blob.da2ded7b.svg);
+}
+.logo{
+   font-size: 18px;
+   font-weight: 800;
+}
+}
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
