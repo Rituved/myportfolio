@@ -540,7 +540,6 @@ textarea {
     width: 100%;
     }
     .contactLeft img {
-        /* visibility: hidden;  */
        width: 100%;
     }
     .contactStarted {
@@ -576,6 +575,9 @@ textarea {
     flex-direction: column;
     /* background-color: #00a1db; */
 }
+.img img:hover{
+    transform: scale(1);
+}
 .Github {
     padding: 10px 10px;
 }
@@ -585,9 +587,10 @@ textarea {
 .logo{
    font-size: 18px;
    font-weight: 800;
+   background-color: #272b2b;
 }
 .occupation {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -595,13 +598,25 @@ textarea {
     font-size: 35px;
     font-weight: 700;
 }
+
 .projectOne {
    margin: 0 auto;
-   background-color: #58db00;
    margin-top: 20px;
     padding: 10px 5px;
 }
-
+.dark_white {
+   
+  margin-left: -200px;
+}
+nav{
+    display: flex;
+}
+.home button{
+    margin-left: 5px;
+}
+.icon{
+    margin-left: 5px;
+}
 textarea {
     width: 90%;
 }
