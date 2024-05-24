@@ -16,13 +16,21 @@
 </html>
   <body>
     <header>
-      <!-- <div id="outerCursor" class="cursor">
-        <div id="innerCursor" class="cursor"></div> -->
+      <div id="outerCursor" class="cursor">
+        <div id="innerCursor" class="cursor"></div>
     </div>
       <!-- navigation section start -->
       <div class="container">
         <div class="wrapperNavigation ">
           <nav>
+            <ul class="sidebar">
+              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
             <div class="logo">Ritu's <span> Portfolio.</span></div>
             <ul>
               <li><a  class="ancor" href="">Home</a></li>
@@ -30,6 +38,7 @@
               <li><a  class="ancor" href="#skills">Skills</a></li>
               <li><a  class="ancor" href="#projects">Projects</a></li>
               <li><a  class="ancor" href="#contact">Contact</a></li>
+              <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
             </ul>
             <div class="dark_white">🔆</div>
           </nav>
@@ -42,17 +51,17 @@
       <section>
         <div class="container">
           <div class="home">
-            <div class="box">
-              <div class="o">⭐</div>
-              <div class="o">⭐</div>
-              <div class="o">⭐</div>
-              <div class="o">⭐</div>
-              <!-- <div class="o vh">⭐</div>
-              <div class="o vh">⭐</div>
-              <div class="o vh">⭐</div>
-              <div class="o vh">⭐</div>
-              <div class="o vh">⭐</div> -->
-          </div>
+            <!-- <div class="box">
+              <div class="o">⭐❤❤💜💖</div>
+              <div class="o">⭐❤❤💜💖</div>
+              <div class="o">⭐❤❤💜💖</div>
+              <div class="o">⭐❤❤💜💖</div>
+              <div class="o vh">⭐🌸🌸</div>
+              <div class="o vh">⭐🌸</div>
+              <div class="o vh">⭐❤</div>
+              <div class="o">⭐💖</div>
+              <div class="o ">⭐❤❤💜💖</div>
+          </div> -->
              <div class="main-page">
               <div class="homeLeft">
               <p class="hello">Hello,My Name Is</p>
@@ -82,7 +91,7 @@
               </div>
             </div>
             <div class="homeRight">
-              <img src="https://github.com/Bppatkar.png" alt="">
+              <!-- <img src="https://github.com/Bppatkar.png" alt=""> -->
             </div>
              </div>
           </div>
@@ -164,10 +173,10 @@
               <p>
                 I have tried my best level to copy this<br />
                 website which i got from internet by using <br />html, css and
-                bootstrap i think practice is the <br />only thing from which
+                bootstrap i think practice is<br />only thing from which
                 one can gain confident.
               </p>
-              <div class="icon">
+              <div class="icon bb">
                 <a href="https://www.linkedin.com/in/ritu-singh-787615290">  <i class="fa-solid fa-video"></i></a>
                 <a href=" https://rituved.github.io/wat-a-burger/"><i class="fa-solid fa-eye"></i></a>
                <a href="https://github.com/Rituved/wat-a-burger.git"> <i class="fa-brands fa-github"></i></a>
@@ -347,6 +356,16 @@
       </section>
       <!-- contact section end -->
       <script src="js.js"></script>
+      <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+      </script>
     </main>
     
   </body>

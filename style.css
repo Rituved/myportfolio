@@ -95,6 +95,25 @@ nav ul {
   border: 5px solid #db143c;
       border-radius: 50%;
 }
+.homeLeft{
+    width: 50%;
+    padding-left: 20px;
+}
+.homeRight{
+    width: 50%;
+    background-color: #db143c;
+}
+.main-page{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #00a1db;
+    /* margin-top: 50px; */
+  
+}
 .hello {
     font-size: 35px;
 }
@@ -137,24 +156,17 @@ nav ul {
     color: #db143c;
     font-weight: 600;
 } 
-.main-page{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-  
-}
+
 /* home section end */
 /* about start */
 .about {
     display: flex;
     align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto;
     padding-top: 50px;
-    margin-left: 50px;
     padding-bottom: 50px;
-}
-.hiddenp{
-    visibility: hidden;
 }
 .nameF {
     font-size: 40px;
@@ -176,21 +188,13 @@ nav ul {
     line-height: 25px;
     font-size: 16px;
 }
-.homeRight {
-    object-fit: cover;
-    background-repeat: no-repeat;
-    /* position: relative;
-    left: 60px;
-    bottom: 100px; */
-  /* width: 00px; */
-  background-image: url(https://mohit-portfolio.vercel.app/assets/blob.da2ded7b.svg);
+.aboutleft{
+    width: 45%;
 }
-.homeRight img{
-    border-radius: 20%;
-    width: 400px;
-    padding-top: 10px;
-    padding-left: 30px;
+.aboutRight{
+    width: 45%;
 }
+
 /* about end */
 /*  skills section start  */
 .skillsTitle {
@@ -357,14 +361,12 @@ margin: 0 auto;
     padding-bottom: 50px;
 }
 
-.contactLeft img {
-    width: 580px;
-}
-
 .contactStarted {
     display: flex;
     justify-content: space-around;
+    width: 90%;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -421,11 +423,14 @@ i {
 }
 
 .form input {
-    padding: 10px 25px;
+    padding: 10px 0px;
     width: 100%;
     border-radius: 6px;
     border: none;
-    margin: 4px 0px;
+   margin-top: 4px;
+   margin-bottom: 4px;
+   margin-left: 0;
+   margin-right: 0;
     font-size: 16px;
     background-color: white;
 }
@@ -455,12 +460,24 @@ textarea {
 
 .copyRight {
     text-align: center;
-    /* color: #000000; */
     font-weight: 600;
     padding-bottom: 30px;
     background-color: var(--background-color);
 }
-
+.contactLeft{
+    width:50%;
+  padding-top: 20px;
+}
+.contactRight{
+    width:50%;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #db143c;
+}
+.contactLeft img{
+    width: 90%;
+}
 /* contact section end */
 .o{
     position: absolute;
@@ -523,18 +540,18 @@ textarea {
 
 /* media quary start */
 /*  Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 466px) { 
+@media only screen and (max-width: 456px) { 
     nav a{
-     visibility: hidden;
-    }
-    .project {
-        display: flex;
-        justify-content: center;
-      /* margin-left: 15px; */
+     display: none;
     }
     .fillForm {
        text-align: center;
     }
+    .name {
+        font-size: 64px;
+        font-weight: 800;
+       margin-left: -8px;}
+
     .skills_list{
      margin-left: 10px;
     width: 100%;
@@ -545,6 +562,9 @@ textarea {
     .contactStarted {
       display: flex;
       flex-direction: column;
+    }
+    .aboutleft img{
+        display: none;
     }
     .form input {
         width: 90%;  
@@ -563,17 +583,28 @@ textarea {
        display: flex;
        flex-direction: column;
     }
+    
     .nameF {
         font-size: 25px;
         font-weight: 600;
  }
- .aboutleft img{
-    width: 400px;
- }
+
+.contactLeft{
+    width:100%;
+}
+.contactRight{
+    width:100%;
+    padding-left: 1px;
+   padding-right: 1px;
+
+} 
+.contactStarted{
+    margin: 0 auto;
+}
  .main-page{
     display: flex;
     flex-direction: column;
-    /* background-color: #00a1db; */
+    
 }
 .img img:hover{
     transform: scale(1);
@@ -587,7 +618,8 @@ textarea {
 .logo{
    font-size: 18px;
    font-weight: 800;
-   background-color: #272b2b;
+ margin-right: 100px;
+ padding-right: 100px;
 }
 .occupation {
     font-size: 32px;
@@ -598,18 +630,21 @@ textarea {
     font-size: 35px;
     font-weight: 700;
 }
-
 .projectOne {
-   margin: 0 auto;
-   margin-top: 20px;
-    padding: 10px 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* padding: -10px 15px;     */
+    
 }
-.dark_white {
-   
-  margin-left: -200px;
-}
-nav{
+.project{
     display: flex;
+    justify-content: center;
+}
+
+.dark_white {
+    
+  position: absolute;
+  right: 50px;
 }
 .home button{
     margin-left: 5px;
@@ -620,9 +655,52 @@ nav{
 textarea {
     width: 90%;
 }
+.homeLeft{
+    width: 100%;
+}
 
 .hiddenp{
     visibility: visible;
 }
+.aboutRight{
+    width: 100%;
+}
 }
 
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(204, 18, 18, 0.753);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }

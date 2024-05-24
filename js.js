@@ -21,3 +21,4 @@ document.addEventListener('mousemove', function(event) {
     // Move the outer cursor to the mouse position
     outerCursor.style.transform = `translate(${event.clientX - outerCursor.offsetWidth / 2}px, ${event.clientY - outerCursor.offsetHeight / 2}px)`;
 });
+
