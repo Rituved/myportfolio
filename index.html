@@ -23,25 +23,26 @@
       <div class="container">
         <div class="wrapperNavigation ">
           <nav>
-            <ul class="sidebar">
-              <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Products</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Forum</a></li>
-              <li><a href="#">Login</a></li>
-            </ul>
+            
             <div class="logo">Ritu's <span> Portfolio.</span></div>
             <ul>
-              <li><a  class="ancor" href="">Home</a></li>
-              <li><a  class="ancor" href="#about">About</a></li>
-              <li><a  class="ancor" href="#skills">Skills</a></li>
-              <li><a  class="ancor" href="#projects">Projects</a></li>
-              <li><a  class="ancor" href="#contact">Contact</a></li>
+              <li class="g"><a  class="ancor" href="">Home</a></li>
+              <li class="g"><a  class="ancor" href="#about">About</a></li>
+              <li class="g"><a  class="ancor" href="#skills">Skills</a></li>
+              <li class="g"><a  class="ancor" href="#projects">Projects</a></li>
+              <li class="g"><a  class="ancor" href="#contact">Contact</a></li>
               <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
             </ul>
             <div class="dark_white">🔆</div>
           </nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li class="redd"><a  class="ancor red" href="">Home</a></li>
+            <li class="redd"><a  class="ancor red" href="#about">About</a</li>
+            <li class="redd"><a  class="ancor red" href="#skills">Skills</a></li>
+            <li class="redd"><a  class="ancor red" href="#projects">Projects</a></li>
+            <li class="redd"><a  class="ancor red" href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
       <!-- navigation section end -->
@@ -56,9 +57,9 @@
               <div class="o">⭐</div>
               <div class="o">⭐</div>
               <div class="o">⭐</div>
-              <div class="o vh">⭐</div>
-              <div class="o vh"></div>
-              <div class="o vh">⭐</div>
+              <div class="o ">⭐</div>
+              <div class="o ">⭐</div>
+              <div class="o ">⭐</div>
               <div class="o">⭐</div>
               <div class="o ">⭐</div>
           </div>
@@ -101,6 +102,7 @@
       <!-- about start -->
       <section>
         <div class="container">
+          <h2 class="about-me">About<span> Me</span></h2>
           <div id="about" class="about scrolling">
             <div class="aboutleft">
               <img src="assets/h-removebg-preview (1).png" alt="" />
@@ -356,16 +358,17 @@
       </section>
       <!-- contact section end -->
       <script src="js.js"></script>
-      <script>
-        function showSidebar(){
-          const sidebar = document.querySelector('.sidebar')
-          sidebar.style.display = 'flex'
-        }
-        function hideSidebar(){
-          const sidebar = document.querySelector('.sidebar')
-          sidebar.style.display = 'none'
-        }
-      </script>
+     
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
     </main>
     
   </body>

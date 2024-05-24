@@ -165,6 +165,16 @@ nav ul {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.about-me{
+    font-size: 40px;
+}
+.emoji{
+    width: 10%;
+    border-radius: 50%;
+    position: absolute;
+   margin: 0 auto;
+    bottom: 50px;
+}
 .nameF {
     font-size: 40px;
     font-weight: 600;
@@ -191,7 +201,15 @@ nav ul {
 .aboutRight{
     width: 45%;
 }
-
+.about-me{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.about-me span{
+    color: #db143c;
+}
 /* about end */
 /*  skills section start  */
 .skillsTitle {
@@ -265,12 +283,12 @@ margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 50px;
 }
 .projectB{
     background-color: var(--background-color);
 }
 .projectOne {
-    padding: 20px;
     border-radius: 10px;
     height: 400px;
     border: 2px solid ;
@@ -289,6 +307,7 @@ margin: 0 auto;
     /* height: 200px; */
     border-radius: 10px;
     margin: 0 auto;
+    padding: 10px;
 }
 .img img{
     border-radius: 10px;
@@ -318,7 +337,7 @@ margin: 0 auto;
     padding-bottom: 20px;
 }
 .icon a{
-    color: #000000;
+    color: #888686;
 }
 
 .projectMy {
@@ -536,9 +555,60 @@ textarea {
 }
 
 /* media quary start */
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .red{
+    color: #db143c;
+  }
+  .redd{
+    margin-top: 15px;
+    padding-left: 10px;
+  }
+  .redd:hover{
+    background-color: #bcbebe;
+    padding: 5px;
+  }
+  .redd a{
+    text-decoration: none;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 60%;
+    }
+  }
 /*  Small devices (landscape phones, 576px and up) */
-@media only screen and (max-width: 456px) { 
-    nav a{
+@media only screen and (max-width: 416px) { 
+    .g a{
      display: none;
     }
     .fillForm {
@@ -633,7 +703,7 @@ textarea {
 .projectOne {
     margin-left: 50px;
     margin-right: 50px;
-    /* padding: -10px 15px;     */
+   padding: 6px;
     
 }
 .project{
@@ -642,7 +712,7 @@ textarea {
 }
 
 .dark_white {
-    
+    font-size: 25px;
   position: absolute;
   right: 50px;
 }
@@ -665,42 +735,7 @@ textarea {
 .aboutRight{
     width: 100%;
 }
+
 }
 
-.sidebar{
-    position: fixed;
-    top: 0; 
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    background-color: rgba(204, 18, 18, 0.753);
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .sidebar li{
-    width: 100%;
-  }
-  .sidebar a{
-    width: 100%;
-  }
-  .menu-button{
-    display: none;
-  }
-  @media(max-width: 800px){
-    .hideOnMobile{
-      display: none;
-    }
-    .menu-button{
-      display: block;
-    }
-  }
-  @media(max-width: 400px){
-    .sidebar{
-      width: 100%;
-    }
-  }
+
